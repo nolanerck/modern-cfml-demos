@@ -132,9 +132,20 @@
 						<li>Run code in its own "context"</li>
 						<li>Not a CFML specific feature</li>
 						<li>Common in modern JavaScript, other languages too</li>
-						<li>Demo</li>
 					</ul>
-				</section>				
+				</section>	
+
+				<section>
+					<h2>Closures are all over TestBox</h2>
+					<ul>
+						<li>Testing code is always important</li>
+						<li>You can use TestBox to test <em>any</em> CF code</li>
+						<li>Not just for ColdBox projects</li>
+						<li>Can test cfinclude, functions, custom tags, whatever</li>
+						<li>Deson't need to be a ColdBox app</li>
+						<li>But you <em>do</em> need closures</li>
+					</ul>
+				</section>			
 
 				<section>
 					<h2>Member Functions</h2>
@@ -143,6 +154,7 @@
 						<li>Instead of, say, ArrayLen( arr ), it's arr.length()</li>
 						<li>The "thing" has the function built inside</li>
 						<li>Similar to Java, Groovy, JavaScript, etc</li>
+						<li>Code looks more like other OO languages</li>
 					</ul>
 				</section>
 
@@ -151,7 +163,7 @@
 					<ul>
 						<li>All essentially short-hands for varios if() statements</li>
 						<li>Elvis is ?:</li>
-						<li>Ternary is ? expression : expression</li>
+						<li>Ternary is test-case ? expression : expression</li>
 						<li>Safe Navigation:<br />
 							structName?.keyThatMayNotExist
 						</li>
@@ -192,6 +204,7 @@
 					<ul>
 						<li>CFML Reference on helpx.adobe.com</li>
 						<li>Talk to people at the conference!</li>
+						<li>cfdocs.org</li>
 						<li>"Head First Design Pattens" book</li>
 						<li>South of Shasta on-site and remote training classes</li>
 					</ul>
@@ -214,10 +227,18 @@
 		<script src="../Reveal.js/js/reveal.js"></script>
 
 		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) 
+			{
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../Reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+
 			Reveal.initialize();
 		</script>
 
 		<script defer src="../fontawesome/on-server/js/fontawesome-all.js"></script>
-
 	</body>
 </html>
