@@ -47,7 +47,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Real world scenarios for modern CFML</h2>
+					<h2>Real World Scenarios For Modern CFML</h2>
 					<p class="centered">Nolan Erck</p>
 					<p class="centered">South of Shasta Consulting</p>
 				</section>
@@ -74,19 +74,19 @@
 				<section data-background-image="./images/charlie_brown.png" data-background-size="contain">
 				</section>
 
-<!--				<section>
+				<section>
 					<h2>Code And Slides</h2>
 					<p class="centered">github.com/nolanerck</p>
-					<p class="centered">crash-course-angular</p>
-				</section> -->
+					<p class="centered">modern-cfml-demos</p>
+				</section>
 
 				<section>
 					<h2>Today's Agenda</h2>
 					<ul>
 						<li>Look at new language features CFML</li>
-						<li>And related newer tools, etc.</li>
-						<li>Discuss breifly what they do</li>
-						<li>And give non "hello world" examples of how to use them.</li>
+						<li>And related newer tools, etc</li>
+						<li>Discuss briefly what they do</li>
+						<li>And give non "hello world" examples of how to use them</li>
 					</ul>
 				</section>
 
@@ -122,18 +122,9 @@
 					<ul>
 						<li>Run code in its own "context"</li>
 						<li>Not a CFML specific feature</li>
-						<li>Common in modern JavaScript</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Closures</h2>
-					<ul>
-						<li>Run code in its own "context"</li>
-						<li>Not a CFML specific feature</li>
 						<li>Common in modern JavaScript, other languages too</li>
 					</ul>
-				</section>	
+				</section>
 
 				<section>
 					<h2>Closures are all over TestBox</h2>
@@ -151,7 +142,7 @@
 					<h2>Member Functions</h2>
 					<ul>
 						<li>Really don't <em>do</em> anything different</li>
-						<li>Instead of, say, ArrayLen( arr ), it's arr.length()</li>
+						<li>Instead of ArrayLen( arr ), it's arr.length()</li>
 						<li>The "thing" has the function built inside</li>
 						<li>Similar to Java, Groovy, JavaScript, etc</li>
 						<li>Code looks more like other OO languages</li>
@@ -161,27 +152,25 @@
 				<section>
 					<h2>Elvis, Ternary, Safe Navigation</h2>
 					<ul>
-						<li>All essentially short-hands for varios if() statements</li>
+						<li>All essentially short-hands for various if() statements</li>
 						<li>Elvis is ?:</li>
 						<li>Ternary is test-case ? expression : expression</li>
-						<li>Safe Navigation:<br />
-							structName?.keyThatMayNotExist
-						</li>
+						<li>Safe Navigation is structName?.keyThatMayNotExist</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Functional programming</h2>
+					<h2>Functional Programming</h2>
 					<ul>
-						<li>filter</li>
-						<li>map</li>
-						<li>reduce</li>
-						<li>Convert queries to arrays for better APIs</li>
+						<li>filter()</li>
+						<li>map()</li>
+						<li>reduce()</li>
+						<li>Convert queries to arrays for better APIs, etc</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>QueryExecute</h2>
+					<h2>QueryExecute()</h2>
 					<ul>
 						<li>Cleaner way to execute queries in CFScript</li>
 						<li>Less of the ".net" style block of code</li>
