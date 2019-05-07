@@ -11,7 +11,7 @@
 <cfscript>
 	qGetMovies = QueryExecute( "SELECT MovieId, Title, ReleaseYear FROM tMovies
 								WHERE MovieID = :ID", 
-								<!--- { ID = 5 },  --->
+								{ ID = 5 },
 								{ datasource="Movies" } );
 
 	WriteDump( qGetMovies );
